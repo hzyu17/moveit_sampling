@@ -6,6 +6,8 @@ from sensor_msgs.msg import JointState
 from moveit_msgs.srv import GetPlanningScene
 from moveit_msgs.msg import PlanningScene
 import numpy as np
+import moveit_commander
+
 
 class StateValidity():
     def __init__(self):
@@ -18,15 +20,18 @@ class StateValidity():
         rospy.loginfo('service is avaiable')
         # prepare msg to interface with moveit
         self.rs = RobotState()
-        self.rs.joint_state.name = ['panda_joint1','panda_joint2', 'panda_joint3', 'panda_joint4', 'panda_joint5', 'panda_joint6', 'panda_joint7', 'panda_finger_joint1', 'panda_finger_joint2']
-        self.rs.joint_state.position = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+        self.rs.joint_state.name = ['panda_joint1','panda_joint2', 'panda_joint3', 'panda_joint4', 'panda_joint5', 'panda_joint6', 'panda_joint7']
+        self.rs.joint_state.position = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
         self.joint_states_received = False
 
         # service for getting the current planning scene
         self.planning_sc_srv = rospy.ServiceProxy('/get_planning_scene', GetPlanningScene)
         self.planning_sc_srv.wait_for_service()
         rospy.loginfo('service: /get_planning_scene is avaiable')
-
+        
+        # motion planning
+        self.group_name = "panda_arm"
+        self.group = moveit_commander.MoveGroupCommander(group_name)
 
     def checkCollision(self):
         '''
@@ -74,8 +79,11 @@ class StateValidity():
         print(result)
         return result
 
-    #def motion_planning():
-        
+    def motion_planning():
+        joint_values = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+        planning_scene = self.get_planning_scene()
+        goal_state = RobotState()
+        goal_state.
 
     def random_state_collision_check(self):
 
