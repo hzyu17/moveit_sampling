@@ -20,9 +20,7 @@ Ubuntu18.04 \
              source ~/ws_moveit/devel/setup.bash \
    </code> 
   * Build:\
-   <code>
-	     cd ~/ws_moveit && catkin build \
-             source ~/ws_moveit/devel/setup.bash \
+   <code> cd ~/ws_moveit && catkin build \ source ~/ws_moveit/devel/setup.bash \
    </code>
  * Usage: \
 	After creating the neccessary ROS environments and installation of moveit
