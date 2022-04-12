@@ -1,0 +1,8 @@
+prefix=/home/hongzhe/ws_moveit/src/moveit_collect_data/cmake-build-debug/devel
+
+Name: moveit_collect_data
+Description: Description of moveit_collect_data
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

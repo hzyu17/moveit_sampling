@@ -11,7 +11,7 @@ first_data = True
 l_data = np.zeros(7)
 total_data = l_data
 n_data_point = 10000
-i_traj = 0
+i_traj = 13
 
 def callback(data):
     global new_trj, first_data, l_data, total_data, i_traj
@@ -37,7 +37,7 @@ def callback(data):
         first_data = True
 
 def listener():
-    rospy.init_node('joint state listener')
+    rospy.init_node('joint_state_listener')
     rospy.Subscriber("/joint_states", JointState, callback)
 
     rospy.spin()
