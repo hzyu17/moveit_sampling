@@ -19,11 +19,12 @@ Ubuntu18.04 \
 	     cd ~/ws_moveit && catkin build \
              source ~/ws_moveit/devel/setup.bash \
    </code> 
-  * Build:\
-   <code> cd ~/ws_moveit && catkin build \ source ~/ws_moveit/devel/setup.bash \
+ * Build:\
+   <code> cd ~/ws_moveit && catkin build \ 
+	  source ~/ws_moveit/devel/setup.bash \
    </code>
  * Usage: \
-	After creating the neccessary ROS environments and installation of moveit
+   After creating the neccessary ROS environments and installation of moveit
    * run the rviz world: 
  	<code> roslaunch panda_moveit_config demo.launch pipeline:=ompl-chomp </code>
    * adding obstacles:
