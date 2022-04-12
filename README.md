@@ -5,14 +5,14 @@ USE MOVEIT TO COLLECT ROBOT TRAJECTORY DATA
 
 ![Planning using pandas and OMPL-CHOMP pipeline](pandas_sampling.png)
 
- * Tutorial for Moveit: 
+ * Tutorial for Moveit: \
 [Moveit step by step tutorial](https://ros-planning.github.io/moveit_tutorials/doc/getting_started/getting_started.html)
  . This project has been tested on Ubuntu18.04 ROS melodic with moveit1.
  * Requirements
-Ubuntu18.04
+Ubuntu18.04 \
 [ROS melodic](http://wiki.ros.org/melodic/Installation/Ubuntu)
 	
- * Installation:
+ * Installation:\
    <code> mkdir -p ~/ws_moveit/src \
              cd ~/ws_moveit/src \
 	     git clone https://github.com/lucasyu17/moveit_sampling.git --recurse-submodules \
@@ -20,7 +20,8 @@ Ubuntu18.04
              source ~/ws_moveit/devel/setup.bash \
    </code> 
 
- * Usage: After creating the neccessary ROS environments and installation of moveit
+ * Usage: \
+	After creating the neccessary ROS environments and installation of moveit
    * run the rviz world: 
  	<code> roslaunch panda_moveit_config demo.launch pipeline:=ompl-chomp </code>
    * adding obstacles:
