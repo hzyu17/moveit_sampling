@@ -11,11 +11,7 @@ Ubuntu18.04
 [ROS melodic](http://wiki.ros.org/melodic/Installation/Ubuntu)
  * Usage: After creating the neccessary ROS environments and installation of moveit
    * run the rviz world: 
-<html>
- <head>
-	roslaunch panda_moveit_config demo.launch pipeline:=ompl-chomp
- </head>
-</html>
+ 	<p><code> roslaunch panda_moveit_config demo.launch pipeline:=ompl-chomp </code></p>
    * adding obstacles:
 <html>
  <head>
