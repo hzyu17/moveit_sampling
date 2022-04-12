@@ -9,6 +9,15 @@ USE MOVEIT TO COLLECT ROBOT TRAJECTORY DATA
  * Requirements
 Ubuntu18.04
 [ROS melodic](http://wiki.ros.org/melodic/Installation/Ubuntu)
+	
+ * Installation:
+   <p><code> mkdir -p ~/ws_moveit/src
+             cd ~/ws_moveit/src 
+	     git clone https://github.com/lucasyu17/moveit_sampling.git --recurse-submodules
+	     cd ~/ws_moveit && catkin build
+             source ~/ws_moveit/devel/setup.bash
+   </p></code> 
+
  * Usage: After creating the neccessary ROS environments and installation of moveit
    * run the rviz world: 
  	<p><code> roslaunch panda_moveit_config demo.launch pipeline:=ompl-chomp </code></p>
