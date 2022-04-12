@@ -19,7 +19,6 @@ Ubuntu18.04 \
 	     cd ~/ws_moveit && catkin build \
              source ~/ws_moveit/devel/setup.bash \
    </code> 
-
   * Build:\
    <code>
 	     cd ~/ws_moveit && catkin build \
