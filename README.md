@@ -3,6 +3,8 @@ USE MOVEIT TO COLLECT ROBOT TRAJECTORY DATA
 
 **Collect trajectory data from a 7-DOF pandas robot arm in a Rviz environment with cluttered obstacles. Motion planning pipeline is OMPL-CHOMP integrated in moveit.**
 
+![Planning using pandas and OMPL-CHOMP pipeline](pandas_sampling.png)
+
  * Tutorial for Moveit: 
 [Moveit step by step tutorial](https://ros-planning.github.io/moveit_tutorials/doc/getting_started/getting_started.html)
  . This project has been tested on Ubuntu18.04 ROS melodic with moveit1.
