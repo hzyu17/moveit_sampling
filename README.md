@@ -13,21 +13,21 @@ Ubuntu18.04
 [ROS melodic](http://wiki.ros.org/melodic/Installation/Ubuntu)
 	
  * Installation:
-   <p><code> mkdir -p ~/ws_moveit/src \
+   <code> mkdir -p ~/ws_moveit/src \
              cd ~/ws_moveit/src \
 	     git clone https://github.com/lucasyu17/moveit_sampling.git --recurse-submodules \
 	     cd ~/ws_moveit && catkin build \
              source ~/ws_moveit/devel/setup.bash \
-   </p></code> 
+   </code> 
 
  * Usage: After creating the neccessary ROS environments and installation of moveit
    * run the rviz world: 
- 	<p><code> roslaunch panda_moveit_config demo.launch pipeline:=ompl-chomp </code></p>
+ 	<code> roslaunch panda_moveit_config demo.launch pipeline:=ompl-chomp </code>
    * adding obstacles:
-	<p><code> python ~/ws_moveit/src/moveit_collect_data/scripts/collision_scene.py </code></p>
+	<code> python ~/ws_moveit/src/moveit_collect_data/scripts/collision_scene.py </code>
 
    * start the data listener:
-	<p><code> python ~/ws_moveit/src/moveit_collect_data/scripts/collect_data.py </code></p>
+	<code> python ~/ws_moveit/src/moveit_collect_data/scripts/collect_data.py </code>
    * start sampling node:
-	<p><code> rosrun moveit_collect_data random_sampling </code></p>
+	<code> rosrun moveit_collect_data random_sampling </code>
 
