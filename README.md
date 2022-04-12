@@ -13,21 +13,10 @@ Ubuntu18.04
    * run the rviz world: 
  	<p><code> roslaunch panda_moveit_config demo.launch pipeline:=ompl-chomp </code></p>
    * adding obstacles:
-<html>
- <head>
-	python ~/ws_moveit/src/moveit_collect_data/scripts/collision_scene.py
- </head>
-</html>
+	<p><code> python ~/ws_moveit/src/moveit_collect_data/scripts/collision_scene.py </code></p>
+
    * start the data listener:
-<html>
- <head>
-	python ~/ws_moveit/src/moveit_collect_data/scripts/collect_data.py
- </head>
-</html>
+	<p><code> python ~/ws_moveit/src/moveit_collect_data/scripts/collect_data.py </code></p>
    * start sampling node:
-<html>
- <head>
-	rosrun moveit_collect_data random_sampling
- </head>
-</html>
+	<p><code> rosrun moveit_collect_data random_sampling </code></p>
 
